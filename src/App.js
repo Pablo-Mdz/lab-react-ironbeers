@@ -30,9 +30,9 @@ const [beers , setBeers] = useState([])
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/beers" element={<Beers  beers={beers}/>} />
-                <Route path="/add" element={<AddBeer beers={beers} setBeers={setBeers}/>} />
-                <Route path="/random" element={<Random beers={beers}/>} />
                 <Route path="/beers/:id" element={<Beer  beers={beers}/>} />
+                <Route path="/random" element={<Random beers={beers}/>} />
+                <Route path="/add" element={<AddBeer beers={beers} setBeers={setBeers}/>} />
 
             </Routes>
         </div>

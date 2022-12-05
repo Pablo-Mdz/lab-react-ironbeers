@@ -13,7 +13,9 @@ const Random = ({beers}) => {
             {randombeer && (
                 <>
                     <p>{randombeer.name}</p>
-                    <img src={randombeer.image_url} alt="Beer Img" />
+                    <img src={randombeer.image_url} alt="Beer" />
+                    <h5 className="card-body">{randombeer.tagline}</h5>
+              <p>Created By: {randombeer.contributed_by}</p>
                 </>
             )}
         </div>
